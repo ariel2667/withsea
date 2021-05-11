@@ -5,10 +5,129 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WithSea_Project</title>
+    <style type="text/css">
+        
+        body{
+            width:100;
+            height: 130px;
+            background-color: rgb(24, 76, 119);
+        }
+         /*<button>Default Button</button>
+        <button><a href="https://www.nmmst.gov.tw/chhtml/content/525" class="button">ABOUT</a></button>
+        <button class="button">Button</button>
+        <input type="button" class="button" value="Input Button">
+        */
+        .flex{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            letter-spacing:10px;
+            width:auto;
+            height:100px;
+            transform-origin: bottom center;
+            background-color:rgb(243, 248, 222);
+            border:6px solid rgb(133, 206, 172); 
+          }
+          
+        #container { margin:0 auto;width:80%; }
+          
+        
+        body{ /*背景*/
+            width: 100;
+            height: auto;
+            background: rgb(24, 76, 119);
+        }
+        h2{/*框2*/
+            border:2px solid rgb(133, 173, 206); 
+            width: 1141px;
+            height: 543px; 
+                             
+        }
+        
+        h1{ /*標題*/
+            color: rgb(253, 99, 107);
+            font-size:18px;
+            letter-spacing:20px;
+            border: 2px solid rgb(255, 225, 239); 
+            width: auto;
+            height: auto;   
+        }
+        .parent{/*框框設定*/
+            position: relative;
+            align-items:center;
+            width: 1150px;
+            height: 550px;
+            border: 4px solid rgb(142, 236, 243);            
+            top:0px;/*離上面的距離*/
+            left:115px;
+        }
+        p{ /*圖片*/
+            text-align: right;           
+            position: absolute;            
+            top:19px;/*離上面的距離*/
+            left:450px;            
+        }
+        
+        .child{/*字的框框設定*/
+            position:absolute;
+            align-items:center;
+            width: 400px;
+            height: auto;
+            /*border: 2px solid rgb(228, 38, 79);*/          
+            top:230px;/*框框離上面的距離*/
+            left:0px;
+            letter-spacing:7px;
+            background: rgb(24, 76, 119);
+            text-align: right; 
+        }
+
+        .button {
+            background-color: #9dacec;
+            border: none;
+            color: white;
+            padding: 5px 10px;
+            text-align: center;
+            text-decoration: none;
+            /*٩(●ᴗ●)۶display: inline-block;width="374" height="510"<h1>專案test</h1><a routerLink="/store"> ACTIVITY </a>◢*/
+            font-size: 16px;
+            margin: 4px 2px;
+            cursor: pointer;
+        }
+     </style>   
 </head>
 <body>
-    <h1>專案test</h1>
-    <p>asjklfjsalkfjaslkfjlksf </p>
-    <a href="https://www.google.com/?hl=zh_tw"><img src="https://lh3.googleusercontent.com/proxy/9I0rEA5qUuRb03wcs-4z0lKqFfNs6HOEmXRfPbw_H2jcmw9mcyuDFKxK_-6NaxlyRmZh7Ch7xmyM3NWgQ-rYTNgaK6T8jaBG98vYknmKD1GqaL6F6droe1z_dzn2JGf8b39FH18kXSOETyFjxFPUY_4nvnqHWwqmTVfGBNPblXjLX-LYqQ" alt=""></a>
+    <div id="container">  
+  
+        <div class="flex">
+          <img src="data:image/png;base64,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" alt=""></a> 
+          <b><a routerLink="/about"> HOME </a></b>◢ 
+          <a href="https://www.nmmst.gov.tw/chhtml/content/525" class="button">ABOUT</a>◢
+          <a routerLink="/about"> ABOUT </a>◢
+          <a routerLink="/portfoli"> WORK </a>◢
+          
+          
+        </div>
+       </div> 
+
+      <router-outlet></router-outlet>
+
+     
+    
+    <a href="https://www.google.com/?hl=zh_tw"><img src="https://www.google.com/search?q=%E5%9C%96%E7%89%87&source=lnms&tbm=isch&sa=X&ved=2ahUKEwjm2425_7HwAhUHyIsBHRYcDjEQ_AUoAXoECAEQAw&biw=1397&bih=647#imgrc=ZAWr6OdQEBk5pM" alt=""></a>
+    <div class="parent">
+        <h2></h2>
+        
+        <p><img src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.15752-9/182842279_196251142315467_5595521682586864322_n.jpg?_nc_cat=110&ccb=1-3&_nc_sid=ae9488&_nc_ohc=vGFs7RuNxmcAX_LrI18&_nc_ht=scontent-tpe1-1.xx&oh=7e8ddc5e34a95bae5521c54127475c9c&oe=60B876A4" alt=""></p>
+            <div class="child">
+                <h1><b>國立海洋科技博物館</b></h1>
+                <span><a style="color:rgb(255, 145, 94);">2021暑假</a></span>
+                <span><li style="color:rgb(255, 202, 202);">7/1-8/31</li></span>
+                <span><li style="color:rgb(190, 44, 25);">研究典藏館庫房</li></span>
+                <span><li style="color:rgb(255, 255, 255);">GO!</li></span> 
+                
+            </div>         
+        </div>   
 </body>
 </html>
+
+

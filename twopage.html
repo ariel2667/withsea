@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100;
+            height:650px;
+            background: rgb(26, 15, 32);
+        }
+        .container{
+            
+            width:100%;
+            height: auto;
+        }
+        .card{
+            /* 設定父親定位點 */
+            position: relative;
+            width: 350px;
+            float:left;
+            margin: 10px;
+        }
+        img{
+            display: block;
+            width: 100%;
+            height: auto;
+            
+        }
+        .info{        
+            opacity: 0;
+            position: absolute;
+            box-sizing: border-box;
+            background-color: rgba(0,0,0,.3);
+            top: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            padding-top: 40px;
+        }
+        .info p{
+            color: #fff;
+        }
+        .info:hover{
+            margin-top: 0;
+            opacity: 1;  
+        }
+
+        h1{/*大框*/
+            position: relative;
+            width: 720px;
+            height: 375px;
+            border: 2px solid rgb(240, 138, 209);  
+            top:255px;/*離上面的距離*/
+            left:145px;
+        }
+        .t1child{/*內文框框設定*/
+            position:absolute;
+            align-items:center;
+            width: 300px;
+            height: auto;    
+            top:20px;/*框框離上面的距離*/
+            left:20px;
+            letter-spacing:5px;
+            background: rgb(50, 52, 54);
+            font-size:20px;
+ 
+        }
+        .t1{/*字的框框設定*/
+            position: relative;
+            width: 350px;
+            height: 375px;
+            border: 5px solid rgb(158, 231, 143);        
+            left:735px;
+            
+        }
+        picture{ /*大圖片*/
+            text-align: right;       
+            position:absolute;                      
+            display: block;        
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+          <img src="http://www.nmmst.gov.tw/attached/image/20181024/20181024144722_5404.jpg" alt="">
+          <div class="info">
+            <button>View More</button>
+            <p>巨口鯊</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="http://www.nmmst.gov.tw/attached/image/20181024/20181024144641_0901.jpg" alt="">
+          <div class="info">
+            <button>View More</button>
+            <p>甘式巨螯蟹</p>
+          </div>
+        </div>
+        
+        <div class="card">
+          <img src="https://images2.gamme.com.tw/news2/2019/62/42/pJyWn6SZlqCbsKQ.jpg" alt="">
+          <div class="info">
+            <button>View More</button>
+            <p>翻車魚</p>
+          </div>
+        </div>       
+      </div>
+
+      <h1>       
+        <a herf="https://www.youtube.com/watch?v=wuhNZE-QpJ8"><picture><img src="https://pgw.udn.com.tw/gw/photo.php?u=https://uc.udn.com.tw/photo/2020/05/17/1/7889271.jpg&x=0&y=0&sw=0&sh=0&sl=W&fw=800&exp=3600"alt=""></picture></a>
+        
+          <div class="t1">    
+            <div class="t1child">
+                    <b style="color:rgb(190, 44, 25);">展覽內容</b>
+                    <p> </p>
+                    <b><li style="color:rgb(255, 255, 255);">巨口鯊</li></b>
+                    <p> </p>
+                    <b><li style="color:rgb(255, 255, 255);">硨磲貝</li></b>
+                    <p> </p>
+                    <b><li style="color:rgb(255, 255, 255);">甘式巨螯蟹</li></b>
+                    <p> </p>
+                    <b><li style="color:rgb(255, 255, 255);">太陽魚</li></b>
+            </div>
+                    
+          </div>     
+        
+      </h1>
+</body>
+</html>
