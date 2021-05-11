@@ -1,0 +1,13 @@
+新增
+git add ___
+若是不知道可使用all
+git add .
+
+新增變更紀錄
+git commit -m'test'
+
+發送
+git push
+
+檢查狀態
+git status
